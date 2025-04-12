@@ -341,9 +341,7 @@ func_combobox_label.grid(row=4,column=0)
 fig, ax = plt.subplots()
 canvas = FigureCanvasTkAgg(fig, master=int_frame)
 draw_button = ttk.Button(int_frame, text="Нарисовать график", command=draw_func)
-err_label = ttk.Label(int_frame, text="Сообщение об ошибке:")
 draw_button.grid(row=5, column=0, padx=10, pady=10,sticky="ew")
-err_label.grid(row=6, column=0, padx=10, pady=10,sticky="ew")
 
 methods = ["Метод левых прямоугольников", "Метод правых прямоугольников", "Метод средних прямоугольников", "Метод трапеций", "Метод Симпсона"]
 method_combobox = ttk.Combobox(int_frame, values=methods)
@@ -357,9 +355,7 @@ method_combobox_label = tk.Label(int_frame, text="Выберите метод и
 method_combobox_label.grid(row=4,column=1)
 
 calc_button = ttk.Button(int_frame, text="Расчитать интеграл", command=calculate_int)
-calc_err_label = ttk.Label(int_frame, text="Сообщение об ошибке:")
 calc_button.grid(row=5, column=1, padx=10, pady=10,sticky="ew")
-calc_err_label.grid(row=6, column=1, padx=10, pady=10,sticky="ew")
 
 
 
