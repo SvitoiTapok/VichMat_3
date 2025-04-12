@@ -269,7 +269,7 @@ cur_meth=left_pram_meth
 cur_meth_name="Метод левых прямоугольников"
 
 root = tk.Tk()
-root.title("Динамическое построение графиков")
+root.title("Рассчет интегралов")
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 
